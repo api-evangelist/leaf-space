@@ -1,0 +1,53 @@
+generated: '2026-09-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.leaf.space
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: leaf.space
+  role: api
+  relation: own
+- host: leaf.space
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Leadership
+  - Website
+  - Pricing
+  - Support
+  - PrivacyPolicy
+  - Documentation
+  - SignUp
+  serves: []
+  registrable_domain: leaf.space
+  role: website
+  relation: own
+- host: portal.leaf.space
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: leaf.space
+  role: other
+  relation: own
