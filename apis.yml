@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-23'
 
-modified: '2026-09-23'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -41,6 +41,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://leaf.space/feed/
+  type: BlogRSS
 - type: Hosts
   url: hosts/leaf-space-hosts.yml
 - type: Leadership
